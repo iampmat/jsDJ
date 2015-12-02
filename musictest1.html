@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+<!--<script src="https://cdn.rawgit.com/katspaugh/wavesurfer.js/master/dist/wavesurfer.min.js"></script>-->
+<script src="wavesurfer.min.js"></script>
+
+<script src="custom.js"></script>
+
+<style>
+</style>
+</head>
+<body>
+<div class="header">
+	<img id="headerIcon" src="images/handsome.jpg">
+</div>
+
+<div class="container">
+	
+<!-- 	<div class="col-md-1">
+		<input  type="range" value="1" orient="vertical" name="points" min="0.8" max="1.5" step ="0.001" id="slowSlider1" class="vertSlider"
+		onchange="updateTextInput1(this.value);">
+		<input type="text" id="textInput1" value="">
+	</div> -->
+	
+	<div class="col-md-4">
+		<h1>sound 1</h1>
+		<div id="wave">
+			<div class="progress progress-striped active" id="progress-bar">
+            	<div class="progress-bar progress-bar-info"></div>
+        	</div>
+        	
+		</div>
+		<button id='btn' class='button'>Play / Pause</button>
+		
+		<img id='image1'/>
+		<video id='video1'/>
+	</div>
+	
+	<div class="col-md-4">	
+	
+		<div id="singleSliders">
+	
+			<div id="volume1" class="vertSlider" style="height:200px;"></div>
+			<div id="volume2" class="vertSlider" style="height:200px;"></div>
+		</div>
+		<div>
+			<div id="volumeBoth"></div>
+		</div>
+	<!--onclick="adjustVol()"-->
+	</div>
+
+	<div class="col-md-4">
+		<h1>sound 2</h1>
+		
+		<div id="wave1">
+			<div class="progress progress-striped active" id="progress-bar1">
+            	<div class="progress-bar1 progress-bar-info"></div>
+        	</div>
+        	
+		</div>
+		<button id='btn1' class='button'>Play / Pause</button>
+		
+	</div>
+
+<!-- 	<div class="col-md-1">
+		<input  type="range" value="1" orient="vertical" name="points" min="0.8" max="1.5" step= "0.001" id="slowSlider2" class="vertSlider"
+		  onchange="updateTextInput2(this.value);">
+		  <input type="text" id="textInput2" value="">
+	</div> -->
+	
+	
+	<div id="buttons" class="col-md-2">
+		<form id="fileForm1" action="saveFile.php" method="POST" enctype="multipart/form-data" >
+			<input type="file" name="fileToUpload" id="mFileInput1"/>
+			<input type="submit" value="Upload" name="submit" id = "uploadButton1" class="button"/>
+		</form>
+		<input type="button" id="deleteButton" value="delete" onclick="deleteThis()" class="button"/>
+	</div>
+	
+	
+	<div class="col-md-10" id = "songList">
+	<h1>Song List</h2>
+	<ul id="list">
+	</ul>
+	<button id ='leftAudio' type='button' class="button">Left</button>
+	<button id ='rightAudio' type='button' class="button">Right</button>
+	</div>
+
+</div>
+	
+</body>
+</html>

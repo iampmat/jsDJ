@@ -1,0 +1,141 @@
+
+.container{
+	margin-top:20px;
+}
+
+.highlight{
+	background:lightblue;
+}
+.container{
+display: block;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+
+
+#songList{
+	margin:auto;
+	width : 75%;
+	display:inline-block;
+}
+.col-md-4{
+	display:inline-block;
+}
+audio{
+	width: 100%;
+}
+#textInput1{
+	width:100%;
+}
+#textInput2{
+	width:100%;
+}
+img#headerIcon{
+	margin: 0 auto;
+    position: relative;
+    display: block;
+	width:15%;
+}
+ul#list {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width:100%;
+}
+#buttons{
+	margin-top:68px;
+}
+
+body
+{
+
+}
+
+h1 
+{
+	font-family:'Futura',Tahoma,Verdana,Arial,Sans-serif;
+	text-transform: uppercase;
+	color:#545454;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.ui-widget
+{
+	background-image:none;
+	background-color:#545454;
+}
+
+#volume1 .ui-slider-range {
+    background: #FF6600;
+}
+
+#volume2 .ui-slider-range {
+    background: #FF6600;
+}
+
+#volumeBoth .ui-slider-range {
+    background: white;
+}
+
+.ui-slider-handle {
+    background: blue;
+}
+
+.vertSlider
+{
+	outline:none;
+	display:inline-block !important;
+	margin-left: 100px;
+}
+
+#singleSliders
+{
+	outline:none;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button
+{
+
+	margin-top: 20px;
+	position:relative;
+	color:#FFFFFF;
+	text-decoration:none;
+	outline:none;
+	font-family:'Futura',Tahoma,Verdana,Arial,Sans-serif;
+	font-size:7px;
+	font-weight:700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding:2px 6px;
+	border-radius:2px;
+	border:solid 1px #cc5200;
+	background:#FF6600;
+	text-align:center;
+
+	height:25px;
+	
+	-webkit-appearance:none; 
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 4px 0px #cc5200;
+    -moz-box-shadow: 0px 4px 0px #cc5200;
+     box-shadow: 0px 4px 0px #cc5200;
+}
+
+.button:active
+{
+    -webkit-box-shadow: 0px 2px 0px #cc5200;
+    -moz-box-shadow: 0px 2px 0px #cc5200;
+    box-shadow: 0px 2px 0px #cc5200;
+    position:relative;
+    top:2px;
+}
+
+
